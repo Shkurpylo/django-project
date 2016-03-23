@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Форма редагування студентів</title>
+    <meta name="description"
+          value="Система Обліку Студентів Навчального Закладу" />
+
+    <!-- Include Styles-->
+    <link rel="stylesheet"
+           href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+
+       <!-- <style type="text/css"> .col-xs-12, .col-xs-4, .col-xs-8 {border: 1px solid red;}</style> -->
+  </head>
+
+  <body>
+    <!-- Start Container -->
+    <div class="container">
+      <!--Start header -->
+      <div class="row" id="header">
+        <div class="col-xs-12">
+          <h1> Форма редагування Студента</h1>
+        </div>
+      <!-- End header -->
+      </div>
+      <!-- Start Form -->
+      <div class="row" id="form">
+        <div class="col-xs-12">
+
+          <table id="form-table">
+            <tbody>
+              <tr>
+                <td id="col1">Ім'я<sup>*</sup></td>
+                <td id="col2"><input type="text" placeholder="Ім'я студента"></td>
+              </tr>
+              <tr>
+                <td id="col1">По-батькові</td>
+                <td id="col2"><input type="text" placeholder="По-батькові"></td>
+              </tr>
+              <tr>
+                <td id="col1">Прізвище<sup>*</sup></td>
+                <td id="col2"><input type="text" placeholder="Прізвище студента"></td>
+              </tr>
+              <tr>
+                <td id="col1">№ Білету<sup>*</sup></td>
+                <td id="col2"><input type="text" placeholder="№ Білету"></td>
+              </tr>
+              <tr>
+                <td id="col1">Дата народження</td>
+                <td id="col2"><input type="text" placeholder="рррр-мм-дд"></td>
+              </tr>
+              <tr>
+                <td rowspan="2" style="vertical-align:top" id="col1">Фото</td>
+                <td id="col2">Наразі <a href="#">img/2.jpg</a>
+                    Очистити</td>
+              </tr>
+              <tr>
+                <td>Змінити <input type="file" accept="jpe"></td>
+              </tr>
+              <tr>
+                <td id="col1">Група<sup>*</sup></td>
+                <td id="col2">
+                    <select id="form-gr-sel">
+                      <option>МтМ-21</option>
+                      <option>МтМ-22</option>
+                      <option>МтМ-23</option>
+                    </select>
+                </td>
+              </tr>
+              <tr>
+                <td style="vertical-align:top" id="col1">Додаткові Нотатки</td>
+                <td>
+                  <textarea id="t-area" rows="5"></textarea>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+              <!--End Form-->
+        <div class="col-xs-12" id="form-footer">
+          <button class="btn btn-primary" id="footer-button1" type="button">Змінити</button>
+          <button class="btn btn-link" id="footer-button2" type="button">Скасувати</button>
+
+        </div>
+      </div>
+
+
+
+    <!-- End Container -->
+    </div>
+
+  </body>
+</html>
