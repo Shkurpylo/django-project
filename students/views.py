@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import RequestContext, loader
@@ -6,7 +8,24 @@ from django.template import RequestContext, loader
 
 
 def students_list(request):
-    return render(request, 'students/students_list.html', {})
+    students = (
+    {'id': 1,
+    'first_name': u'Андрій',
+    'last_name': u'Корост',
+    'ticket': 2123,
+    'image': 'img/KA.jpg'},
+    {'id': 2,
+    'first_name': u'Віталій',
+    'last_name': u'Подоба',
+    'ticket': 254,
+    'image': 'img/2.jpg'},
+    {'id': 3,
+    'first_name': u'Притула',
+    'last_name': u'Тарас',
+    'ticket': 5332,
+    'image': 'img/TM2.jpg'},
+    )
+    return render(request, 'students/students_list.html', {'students': students})
 
 
 def students_add(request):
